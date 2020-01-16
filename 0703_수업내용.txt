@@ -1,0 +1,128 @@
+﻿//----- day1 
+
+
+// 수업을 위한 환경 설정 
+1) 설문지 작성 및 전송 
+
+2) 크롬웹브라우저 설치 확인 
+    미설치시 다운로드 후 설치 
+
+3) 작업폴더 생성 
+   예) pyclass
+
+4) 파이썬 설치 확인 
+  윈도우 + R
+  cmd
+  터미널창에서 
+   python 입력 
+
+5) 파이썬 설치 
+   다운로드 후 
+   python.org
+  (중요함) 
+  설치시 자동으로 환경변수에 패스 추가되게 설정
+  (Add Python ~ To Path 선택상자 선택 후 설치)
+
+6) 파이썬 자동 패스 확인 
+  윈도우 + R
+  cmd
+  터미널창에서 python 입력 
+  파이썬 쉘 화면이 나오면 버전 확인 
+  
+7) 파이참 다운로드 후 설치 
+  https://www.jetbrains.com/pycharm
+   Community 버전 
+
+// 프로그래밍 인기 순위 사이트 
+https://tiobe.com/tiobe-index
+
+
+// 파이썬
+ - 인터프리터 ( 파이썬, js) 
+ - 컴파일러 (C, 자바 ...)
+
+
+// 파이썬 기본 프로그램 
+- 파이썬쉘 : CUI 
+- IDLE 
+    : 파이썬쉘 결과 화면 저장 
+    : 편집창에서 저장 ctrl+n 
+       [F5] 실행 
+
+// cmd 창에서 파이썬결과파일 실행하기 
+
+  cd 작업폴더경로 
+  dir/w
+  python 파일명.py
+
+
+// 코딩전용폰트 
+ - 나눔코딩 
+ 
+
+// 파이참 환경설정 
+1) 프로젝트 생성 
+   - 작업폴더 설정 
+   - 사이드바에서 확인 
+2) 파이썬 인터프리터 설정 
+   [File]-[Settings] 
+   [Project]
+     Project Interpreter : python 3.7
+3) 편집창 폰트 설정 
+   [File]-[Settings] 
+   [Project]
+     [Editor]-[Font]
+
+// 파이참에서 파이썬 파일 실행하기 
+  [Alt]+[Shift]+[F10]
+  [Run]-[Run] 
+
+
+// 파이참에서 파이썬 파일 만들기 
+
+// 주석달기 
+crtl + / : 한줄 주석 
+
+ # 한줄주석 
+ '''
+  여러줄 주석1 
+  여러줄 주석2
+ ''' 
+
+// 한행 복제 
+  ctrl + d 
+
+// 내장함수 
+len()
+type()
+format()
+print()
+input() 
+
+문자열.count()
+문자열.find()
+문자열.index()
+문자열.replace()
+'연결문자'.join()
+문자열.upper()
+문자열.lower()
+문자열.strip()
+
+문자열.split()
+
+### 퀴즈 
+# 공유자료실 안내 
+http://naver.me/5Wgey4T8
+비밀번호 : 0703 
+
+1) 퀴즈1.py 다운로드 
+2) 작업폴더로 파일 이동 
+3) 파이참에서 파일열기한 후 코딩 
+
+## Reference Site 
+- 공식레퍼린스  : https://docs.python.org/3/
+- w3Schools : https://www.w3schools.com/python/
+- 점프투파이썬 : https://wikidocs.net/book/1
+- 생활코딩 : https://www.opentutorials.org/course/1
+- 동영상강의 : 윤인성 Hello Coding 파이썬
+- 동영상강의 : 최성철 mooc 가천대학교 

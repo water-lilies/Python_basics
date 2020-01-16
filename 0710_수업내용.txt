@@ -1,0 +1,51 @@
+﻿//----- day6
+
+coderecipe@naver.com
+
+# 공유자료실 안내 
+http://naver.me/5ZTf4G8D
+비밀번호 : 0703 
+
+-----------------
+수업 중간 결과파일 
+
+http://223.195.30.136
+naver.me/5ZTf4G8D
+
+data 폴더가 없다면 
+공유자료실에서 data.zip 다운로드후 
+본인 작업폴더에 압축해제할 것 
+
+-----------------
+mySQL 설치과정 
+
+1) 컴퓨터이름이 한글인지 확인 
+
+윈도우탐색기 
+내PC - 우측버튼 - 속성 
+컴퓨터 이름이 한글이라면?
+  [설정변경]
+[변경] 눌러서 이름 변경 - 영문 
+
+2) mySQL 설치 
+
+https://dev.mysql.com/downloads/installer/
+Windows (x86, 32-bit), MSI Installer - 373.4M
+No, thanks ~ 클릭 
+mysql-installer-community-8.0.16.0.msi
+root 관리자계정의 비번 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

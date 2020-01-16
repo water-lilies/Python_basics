@@ -1,0 +1,88 @@
+# 문자열 인덱싱 p51
+# - 인덱싱 첫 위치 값은 0 (R만 예외적으로 1부터 시작한다)
+# - 인덱싱 숫자값이 음수면 역순 : -1 (마지막위치값)
+# 문자열변수[인덱스값]
+myString = 'abcdefg'
+print('myString : ', myString)
+print('myString[0] : ', myString[0])
+print('myString[-1] : ', myString[-1])
+print('myString[3] : ', myString[3])
+print('myString[-2] : ', myString[-2])
+print('-'*10)
+
+# 문자열 슬라이싱
+# 문자열변수[start:end] 하나씩 증가 start 부터 end -1 까지
+# 문자열변수[start:end:step] step 수 만큼 건너뛰기
+# 문자열변수[start:] start 부터 끝까지
+# 문자열변수[:end] 첫번째부터 end -1 까지
+myString2 = 'abcdefghijklmn'
+print('myString2 : ', myString2)
+print('myString2[0:3] : ', myString2[0:3])
+print('myString2[:3] : ', myString2[:3])
+print('myString2[5:] : ', myString2[5:])
+print('myString2[0:5:2] : ', myString2[0:5:2])
+print('myString2[-1:] : ', myString2[-1:])
+print('myString2[-1:-5] : ', myString2[-1:-5]) # -1 뒤에 아무것도 없으므로 안뜸
+print('myString2[-5:-1] : ', myString2[-5:-1])
+print('-'*10)
+
+# %를 이용한 포맷팅 p58
+# style : 문자열안에 입력, %s, %d, %전체자리수, 소수점자리f
+# ' style ' % 변수 나 값
+today = '수요일'
+yesterday = '화요일'
+print('오늘은',today,'입니다.') # 쉼표를 이용한 방식
+print('오늘은 %s 입니다.' % today) # %를 이용한 방식
+print('오늘은 %s 입니다. 어제는 %s 입니다.' % (today, yesterday))
+myNum1 = int(input('숫자를 입력하세요.'))
+myNum2 = float(input('숫자를 입력하세요.'))
+print('입력받은 값은 %d 입니다.' % myNum1)
+print('입력받은 값은 %f 입니다.' % myNum2)
+print('-'*10)
+
+# %전체자리수.소수점이하자리수f
+pi = 3.14156789
+print('pi: %f' % pi )
+print('pi: %.3f' % pi ) # 반올림해서 쓰임. 이걸 제일 많이 사용한다구함
+print('pi: %10.2f' % pi )
+print('pi: %3.5f' % pi )
+print('pi: %15.1f' % pi )
+print('-'*10)
+
+# % 퍼센트 기호 표시 --> 퀴즈같은 곳에 종종 나온다고 함
+# 오늘의 미세농도는 0.0005 % 입니다.
+todayM = 0.0005
+print('오늘의 미세농도는 %f %% 입니다.' % todayM)
+print('-'*10)
+
+# %로 공백 지정
+# %양수숫자 Style(s,f,d) : 오른쪽 정렬
+# %음수숫자 Style(s,f,d) : 왼쪽 정렬
+userName = '홍길동'
+print('user Name : %10s ** '%userName)
+print('user Name : %-10s ** '%userName)
+print('-'*10)
+
+# format 을 이용한 출력방식
+# ' 문자열 {}{}'.format(변수1,변수2)
+# ' 문자열 {index1} {index2}'.format(변수1,변수2)
+color = 'blue'
+myNumber = 7
+# 인덱스 생략
+print(' color {}    number {}'.format(color, myNumber))
+# 인덱스 지정
+print(' 순서교체 : number {1} color {0} '.format(color, myNumber))
+# 초기값 다시 지정
+# 여러줄 명령 작성시에는 백슬래시(\)로 연결한다.
+print(' 이름지정: number {myNumber} color {color}' \
+      .format(myNumber=100, color='red'))
+# :>숫자(앞에 공백 생성), :<숫자(뒤에 공백 생성), :^숫자(좌우에 공백 생성) : {}안에 입력
+# :대체문자>숫자 (앞에 대체문자 생성)
+print('...{}...'.format('hello world'))
+print('...{:>30}...'.format('hello world'))
+print('...{:<30}...'.format('hello world'))
+print('...{:^30}...'.format('hello world'))
+print('...{:*^30}...'.format('hello world'))
+
+
+print('-'*10)

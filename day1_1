@@ -1,0 +1,94 @@
+# 한 줄 주석
+'''
+여러줄 주석
+주석 단축키는 ctrl + /
+'''
+
+# 출력문 print(value/variable, end = '대체문자나 공백')
+print("Hello World")
+print("Hello World") # ctrl + d 한 줄 복제
+
+a = 100
+b = 200
+
+print(a)
+print(b)
+print(a, end='')
+print(b, end='')
+print(a+b)
+
+# 문자 연산자
+# + 연결
+# * 반복 : 문자열 * 반복횟수
+
+txt1 = '안녕하세요. '
+txt2 = '홍길동입니다.'
+
+print( txt1 + txt2 )
+print('-'*10)
+
+# 이스케이프 코드 : p.49 참조
+# \n : 줄바꿈
+# \t : 탭 공백
+# \\ : \ 표시
+# \', \" : 인용부호 표시
+
+print('\n'*3)
+print('\t\t 점심시간 안내')
+print('시간\ "12-1\" ')
+print('-'*10)
+
+# 변수 할당
+user1='철수'
+user2='영희'
+user1Age = user2Age = 22  # 22가 두 변수에 할당된다. 이렇게 되는 언어가 몇개 없음! 자바에서는 이상한애임
+
+print('user1 : ', user1)
+print('user1Age : ', user1Age)
+print('-'*10)
+
+# 퀴즈 : user1 과 user2의 변수값을 서로 변경하기
+
+# 방법1 - 중간 변수 이용(클래식한 방법, 대부분의 언어에서 사용되는 방법)
+temp = user1
+user1 = user2
+user2 = temp
+
+# 방법2 - (파이썬스러운 방법. 다른 언어에서는 안된다.)
+user1, user2 = user2, user1
+
+
+# 변수명 규칙
+# 카멜 기법 : 대문자 이용 방식 예) userAge
+# 스네이크 기법 : _, - 이용   예) user_Age
+# 클래스명은 첫글자를 대문자로 한다.
+# 함수명은 소문자로 한다.
+# 변수명은 소문자로 시작한다.
+# 예약어는 변수명으로 사용할 수 없다.\
+
+# 키워드 출력하기
+import keyword
+print('키워드 목록')
+print(keyword.kwlist)
+print('키워드 개수 : ', len(keyword.kwlist))
+print('-'*10)
+
+# len() : 문자열, 리스트 등의 길이를 표시한다.
+today = '오늘은 화요일입니다.'
+print('today 길이 : ', len(today))
+print('-'*10)
+
+# 여러줄 출력문 - 이스케이프 코드
+print('안\n녕\n하\n세\n요')
+
+# 여러줄 출력문 - 인용부호 ''' ~ '''
+print('''
+안
+녕
+하
+세
+요
+''')
+print('-'*10)
+
+
